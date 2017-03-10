@@ -10,7 +10,7 @@ Ext.application({
         'Users'
     ],
 
-    launch: function() {
+    launch: function () {
         Ext.create('Ext.container.Viewport', {
             layout: 'fit',
             items: {

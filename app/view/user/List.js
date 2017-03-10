@@ -1,16 +1,16 @@
 /**
  * Created by yanshi0429 on 17/3/10.
  */
-Ext.define('AM.view.user.List' ,{
+Ext.define('AM.view.user.List', {
     extend: 'Ext.grid.Panel',
-    alias : 'widget.userlist',
+    alias: 'widget.userlist',
 
-    store : 'Users',
-    title : 'All Users',
+    store: 'Users',
+    title: 'All Users',
 
-    initComponent: function() {
+    initComponent: function () {
         this.columns = [
-            {header: 'Name',  dataIndex: 'name',  flex: 1},
+            {header: 'Name', dataIndex: 'name', flex: 1},
             {header: 'Email', dataIndex: 'email', flex: 1}
         ];
 

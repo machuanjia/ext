@@ -12,7 +12,7 @@ Ext.define('AM.controller.Users', {
         'user.Edit'
     ],
 
-    init: function() {
+    init: function () {
         this.control({
             'userlist': {
                 itemdblclick: this.editUser
@@ -23,15 +23,15 @@ Ext.define('AM.controller.Users', {
         });
     },
 
-    editUser: function(grid, record) {
+    editUser: function (grid, record) {
         var view = Ext.widget('useredit');
 
         view.down('form').loadRecord(record);
         console.log('Double clicked on ' + record.get('name'));
     },
-    updateUser: function(button) {
-        var win    = button.up('window'),
-            form   = win.down('form'),
+    updateUser: function (button) {
+        var win = button.up('window'),
+            form = win.down('form'),
             record = form.getRecord(),
             values = form.getValues();
 

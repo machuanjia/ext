@@ -3,25 +3,25 @@
  */
 Ext.define('AM.view.user.Edit', {
     extend: 'Ext.window.Window',
-    alias : 'widget.useredit',
+    alias: 'widget.useredit',
 
-    title : 'Edit User',
+    title: 'Edit User',
     layout: 'fit',
     autoShow: true,
 
-    initComponent: function() {
+    initComponent: function () {
         this.items = [
             {
                 xtype: 'form',
                 items: [
                     {
                         xtype: 'textfield',
-                        name : 'name',
+                        name: 'name',
                         fieldLabel: 'Name'
                     },
                     {
                         xtype: 'textfield',
-                        name : 'email',
+                        name: 'email',
                         fieldLabel: 'Email'
                     }
                 ]
